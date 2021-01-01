@@ -66,7 +66,7 @@ FuncRScp(){
 }
 
 FuncBuild(){
-    go build -ldflags "${GO_LDFLAGS} -X ${PROJECT_NAME}/main.commitVersion=${commitVersion} -X ${PROJECT_NAME}/main.commitCount=${commitCount}" -o ${PROJECT_NAME}
+    go build -ldflags "${GO_LDFLAGS} -X main.commitVersion=${commitVersion} -X main.commitCount=${commitCount}" -o ${PROJECT_NAME}
 }
 
 FuncRun(){
